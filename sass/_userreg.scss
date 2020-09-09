@@ -1,0 +1,101 @@
+.user{
+    width:50%;
+    margin: 4% auto;
+    box-shadow: 0 10px 21px 0 rgba(0, 0, 0, 0.21);
+    border: 1px solid #aaaaaa;
+    padding:40px 40px;
+    border-radius: 4px;
+    z-index: -1;
+
+    .form{
+        width: 100%;
+
+        h1{
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: 40px;
+            color: $dark-color;
+        }
+        .input-box{
+            position: relative;
+            width: 100%;
+            margin: 25px 0 0;
+
+            input{
+                position: relative;
+                display: block;
+                width: 100%;
+                border: 2px solid #838383;
+                height: 40px;
+                border-radius: 3px;
+                background: none;
+                padding-left: 15px;
+            
+                
+            }
+            span{
+                position: absolute;
+                left: 15px;
+                top: 10px;
+                z-index: -1;
+                transition: all 400ms ease-out;
+            }
+            i{
+                position: absolute;
+                top: 12px;
+                right: 20px;
+                color: #f0215f;
+                visibility: hidden;
+
+            }
+            input:focus{
+                border: 2px solid #2151f0;
+                transition: all 400ms ease-out;
+            }
+            input:focus ~ span, input:valid ~ span{
+                transform: translateY(-18px);
+                left: 7px;
+                z-index: 999;
+                font-size: 12px;
+                background-color: white;
+                padding: 0 3px;
+                color: #2151f0;
+            }
+            input:not(:focus) ~ span{
+                color: #838383;
+            }
+            small{
+                color: #f0215f;
+                visibility: hidden;
+            }
+        }
+        button{
+            display: inline-block;
+            margin: 20px 0 0;
+            width: 100%;
+            padding: 10px 0;
+            font-size: 18px;
+            outline: none;
+            border: none;
+            background: linear-gradient(to right, #d000ff, #9d51ad);
+            color: #fff;
+            border-radius: 3px;
+            transition: box-shadow 300ms ease-out;
+        }
+        button:hover{
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.376);
+        }
+
+        .bottom-text{
+            margin-top: 60px;
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width:972px){
+    .user{
+        width: 90%;
+    }
+}

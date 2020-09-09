@@ -1,0 +1,110 @@
+.signup-container {
+  width: 100%;
+  margin: 7% 0 0;
+
+  .container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .signup-user {
+      border: 1px solid #aaaaaa;
+      width: 40%;
+      height: 300px;
+      text-align: center;
+      padding: 25px 15px;
+
+      h2 {
+        padding: 10px 0;
+        font-size: 2rem;
+        color: $dark-color;
+      }
+      p {
+        padding: 10px 0;
+        color: #999999;
+      }
+      a {
+        display: inline-block;
+        padding: 12px 35px;
+        margin: 10px 0 0;
+        background: linear-gradient(to right, #d000ff, #773586);
+        color: #fff;
+        font-size: 16px;
+        border-radius: 3px;
+        transition: all 200ms ease-out;
+
+        i {
+          padding: 0 0 0 8px;
+        }
+      }
+      a:hover {
+        box-shadow: 0 7px 18px #9c9c9c;
+        transition: all 200ms ease-out;
+      }
+    }
+    .signup-seller {
+      border: 1px solid #aaaaaa;
+      width: 40%;
+      height: 300px;
+      text-align: center;
+      padding: 25px 15px;
+
+      h2 {
+        padding: 10px 0;
+        font-size: 2rem;
+        color: $dark-color;
+      }
+      p {
+        padding: 10px 0;
+        color: #999999;
+      }
+      a {
+        display: inline-block;
+        padding: 12px 35px;
+        margin: 10px 0 0;
+        background: linear-gradient(to right, #d000ff, #773586);
+        color: #fff;
+        font-size: 16px;
+        border-radius: 3px;
+        transition: all 200ms ease-out;
+
+        i {
+          padding: 0 0 0 8px;
+        }
+      }
+      a:hover {
+        box-shadow: 0 7px 18px #9c9c9c;
+        transition: all 200ms ease-out;
+      }
+    }
+    .signup-user:hover,
+    .signup-seller:hover {
+      box-shadow: 0 10px 21px 0 rgba(0, 0, 0, 0.21);
+      transition: all 300ms ease-out;
+    }
+  }
+}
+
+
+@media screen and (max-width: 880px){
+  .signup-container{
+    width: 100%;
+      
+    .container{
+      width: 100%;
+      display: block;
+
+      .signup-user{
+        margin: 0 auto;
+        width: 90%;
+      }
+      .signup-seller{
+        margin: 30px auto;
+        width: 90%;
+      }
+    }
+  }
+}
